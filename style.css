@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Poppins', Arial;
+    margin: 0;
+    background: #FAFAFA;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px 0px 16px;
+    border-bottom: 1px solid #B8B6BF;
+    max-width: 960px;
+    margin: auto;
+}
+
+#menu{
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+#menu a{
+    color: #090021;
+    text-decoration: none;
+}
+header{
+    background-color: #137160;
+    color: #F8F8F8;
+    padding: 100px 32px 8px 32px;
+    max-width: 960px;
+    margin: auto;
+}
+h1{
+    font-size: 32px;
+}
+
+p.sous-titre{
+    font-size: 22px;
+    margin-bottom: 86px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+.images-cours{
+    max-width: 960px;
+    width: 100%;
+}
+
+section#concepts, #languages, #tools{
+    margin: 86px 16px;
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+}
+
+.card{
+    border: 1px solid #F5F5F5;
+    padding: 16px 16px 8px 16px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.flex-concepts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+#concepts .card{
+    width: calc(50% - 8px);
+    box-sizing: border-box;
+
+}
+
+.title-definition{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+h4{
+    margin: 0;
+}
+
+.flex-languages{
+    display: flex;
+    gap: 16px;
+}
+
+.language-title{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#tools ul.card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 45px;
+    font-size: 18px;
+}
