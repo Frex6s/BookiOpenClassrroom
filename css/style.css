@@ -289,7 +289,7 @@ a {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 60px;
 }
 
 .hebergements-cards {
@@ -312,6 +312,37 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    padding-left: 20px;
+    background-color: var(--main-bg-color);
+}
+
+.footer-content-hebergement {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    width: 400px;
+}
+
+.footer-section-about {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    width: 400px;
+}
+
+.footer-content-assistance {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
 }
 
 .activites-cards a {
