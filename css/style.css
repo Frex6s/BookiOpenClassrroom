@@ -95,6 +95,7 @@ form {
     height: 47px;
     text-align: center;
     margin-top: 24px;
+    background-color: #F2F2F2;
 }
 
 #search-button {
@@ -190,7 +191,6 @@ li i{
 h3 {
     font-size: 18px;
     font-weight: 700;
-    max-width: 21px;
 }
 
 #info {
@@ -231,6 +231,11 @@ a {
 
 .card-title {
     font-size: 16px;
+}
+
+.footer-title {
+    font-size: 16px;
+    align-items: center;
 }
 
 .euro {
@@ -287,9 +292,52 @@ a {
     margin-top: 64px;
 }
 
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 .populaires-cards .card {
     display: flex;
-    margin-top: 60px;
+    height: 144px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+#search-input{
+    padding-left: 25%;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.populaires-cards .card-title {
+    margin: 0;
+    font-size: 16px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+}
+
+.populaires-cards .card-rating {
+    display: flex;
+    gap: 2px;
 }
 
 .hebergements-cards {
@@ -314,35 +362,28 @@ a {
     margin-top: 33px;
 }
 
+footer {
+    background-color: var(--main-bg-color);
+    margin-top: 8%;
+}
+
 .footer-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
-    margin-top: 80px;
-    padding-left: 20px;
-    background-color: var(--main-bg-color);
+    max-width: 1440px;
+    padding: 0 50px; 
 }
 
-.footer-content-hebergement {
-    display: flex;
-    flex-direction: row;
-    flex-direction: column;
-    width: 400px;
-}
 
-.footer-section-about {
-    display: flex;
-    flex-direction: row;
-    flex-direction: column;
-    width: 400px;
-}
-
+.footer-content-hebergement,
+.footer-section-about,
 .footer-content-assistance {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    min-width: 200px;
+    max-width: 400px;
 }
 
 .activites-cards a {
@@ -397,12 +438,6 @@ a {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-.populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-    white-space: nowrap;
 }
 
 .hebergements-cards .card-title {
