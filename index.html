@@ -19,7 +19,7 @@
     <div class="main-container">
         <nav>
             <div class="logo">
-                <img src="/images/logo/Booki.png" alt="Logo_booki">
+                <img src="./images/logo/Booki.png" alt="Logo_booki">
             </div>
                 
             <ul class="page">
@@ -31,23 +31,26 @@
             <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
             <div class="search-bar">
-                <img src="images/logo/position.png" alt="Position" id="position-icon">
+                <img src="./images/logo/position.png" alt="Position" id="position-icon">
                 <form action="#" method="get">
                     <input type="text" name="search" value="Marseille, France" id="search-input">
                     <button type="submit" id="search-button">Rechercher</button>
+                    <button type="submit" id="search-button-magnifying-glass"><i class="fa-solid fa-magnifying-glass" id="magnifying-glass"></i></button>
                 </form>
             </div>
             <div class="filter-bar">
-                <h3>Filtres</h3>
-                <ul>
+                <h3 class="filter-text">Filtres</h3>
+                <ul class="filter">
                     <li><button type="submit" id="economique"><i class="fa-solid fa-dollar-sign"></i>Économique</button></li>
                     <li><button type="submit" id="Familial"><i class="fa-solid fa-users"></i>Familial</button></li>
                     <li><button type="submit" id="Romantique"><i class="fa-solid fa-heart"></i>Romantique</button></li>
                     <li><button type="submit" id="Nos_pépites"><i class="fa-solid fa-fire"></i>Nos pépites</button></li>
                 </ul>
             </div>
-                <img src="images/filtre/info.png" alt="info" id="info">
+            <div class="info-container">
+                <img src="./images/filtre/info.png" alt="info" id="info">
                 <p id="info-text">Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </header>
         <main>
             <div class="hebergements-and-populaires">
@@ -271,19 +274,19 @@
             <div class="footer-content">
                 <div class="footer-section-about">
                     <h3 class="footer-title">A propos</h3>
-                    <p>Fonctionnement du site</p>
-                    <p>Conditions générales</p>
-                    <p>Données et confidentialité</p>
+                    <p class="footer-text">Fonctionnement du site</p>
+                    <p class="footer-text">Conditions générales</p>
+                    <p class="footer-text">Données et confidentialité</p>
                 </div>
                 <div class="footer-content-hebergement">
                     <h3 class="footer-title">Nos hébergements</h3>
-                    <p>Charte qualité</p>
-                    <p>Proposez votre hôtel</p>
+                    <p class="footer-text">Charte qualité</p>
+                    <p class="footer-text">Proposez votre hôtel</p>
                 </div>
                 <div class="footer-content-assistance">
                     <h3 class="footer-title">Assistance</h3>
-                    <p>Centre d'aide</p>
-                    <p>Nous contacter</p>
+                    <p class="footer-text">Centre d'aide</p>
+                    <p class="footer-text">Nous contacter</p>
                 </div>
             </div>
         </footer>
