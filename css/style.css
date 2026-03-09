@@ -40,8 +40,8 @@ li a {
 }
 
 li:hover a{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 body {
@@ -82,23 +82,24 @@ p {
     width: 14px;
     height: 18px;
     padding: 14px 18px 15px 18px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     margin-top: 24px;
 }
 
 #search-input {
-        border: 1px solid #F2F2F2;
+        border: 1px solid var(--main-bg-color);
+        font-weight: bold;
 }
 
 form {
     display: flex;
-    width: 195px;
+    width: 20%;
     height: 47px;
     text-align: center;
     margin-top: 24px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
 }
 
 #search-button {
@@ -107,16 +108,17 @@ form {
     color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    border: 1px solid #0065FC;
-    background-color: #0065FC;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
     padding: 15px 16px 15px 16px;
+    cursor: pointer;
 }
 
 .filter-bar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 710px;
+    justify-content: flex-start;
+    width: 100%;
     height: 50px;
     margin-top: 15px;
 }
@@ -157,10 +159,11 @@ li i{
 
 .filter li button:hover {
     background-color: var(--filter-bg-color);
+    cursor: pointer;
 }
 
 #economique:hover, #Romantique:hover, #Nos_pépites:hover , #Familial:hover {
-    background-color: #DEEBFF;
+    background-color: var(--filter-bg-color);
 }
 
 h3 {
@@ -168,12 +171,18 @@ h3 {
     font-weight: 700;
 }
 
-#info {
-    position: absolute;
+.info-container {
     display: flex;
-    margin-top: 15px;
-    width: 22px;
-    height: 22px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+#info {
+    color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #info-text {
@@ -352,7 +361,13 @@ footer {
     justify-content: space-between;
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px; 
+}
+
+.card-button {
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 
@@ -446,7 +461,10 @@ footer {
 }
 
 .footer-text {
-    margin-top: 0px;
+    margin-top: 10px;
+    border: none;
+    display: flex;
+    cursor: pointer;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -546,6 +564,10 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    .main-container {
+        padding: 0px;
+    }
+
     nav {
         flex-direction: column;
         align-items: center;
@@ -570,12 +592,12 @@ footer {
         display: block;
         width: 100%;
         padding-bottom: 15px;
-        border-bottom: 2px solid #F2F2F2; /* Bordure gris */
+        border-bottom: 2px solid var(--main-bg-color); /* Bordure gris */
     }
 
     .page li:hover a {
         border-top: none; /* bordure top -*/
-        border-bottom: 2px solid #0065FC; /* bordure */
+        border-bottom: 2px solid var(--main-color); /* bordure */
     }
 
     .main-title {
@@ -593,9 +615,9 @@ footer {
         width: 49px;
         height: 49px;
         padding: 14px 18px 15px 18px;
-        background-color: #0065FC;
+        background-color: var(--main-color);
         border-radius: 15px 15px 15px 15px;
-        border: 1px solid #0065FC;
+        border: 1px solid var(--main-color);
         align-items: center;
     }
 
@@ -651,6 +673,10 @@ footer {
 
     .info-text a{
         width: 100%;
+    }
+
+    .card-button {
+        background-color: white;
     }
 
     .hebergements-and-populaires {
