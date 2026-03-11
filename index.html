@@ -17,7 +17,8 @@
 <body>
 
     <div class="main-container">
-        <nav>
+        <header>
+            <nav>
             <div class="logo">
                 <img src="./images/logo/Booki.png" alt="Logo_booki">
             </div>
@@ -27,13 +28,15 @@
                 <li><a href="#activites">Activités</a></li>
             </ul>
         </nav>
-        <header>
-            <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+        </header>
+        <main>
+            <section class="hero">
+                <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
             <div class="search-bar">
                 <img src="./images/logo/position.png" alt="Position" id="position-icon">
                 <form action="#" method="get">
-                    <input type="text" name="search" value="Marseille, France" id="search-input">
+                    <input type="text" name="search" placeholder="Marseille, France" id="search-input">
                     <button type="submit" id="search-button">Rechercher</button>
                     <button type="submit" id="search-button-magnifying-glass"><i class="fa-solid fa-magnifying-glass" id="magnifying-glass"></i></button>
                 </form>
@@ -41,18 +44,19 @@
             <div class="filter-bar">
                 <h3 class="filter-text">Filtres</h3>
                 <ul class="filter">
-                    <li><button  id="economique"><i class="fa-solid fa-dollar-sign"></i>Économique</button></li>
-                    <li><button  id="Familial"><i class="fa-solid fa-users"></i>Familial</button></li>
-                    <li><button  id="Romantique"><i class="fa-solid fa-heart"></i>Romantique</button></li>
-                    <li><button  id="Nos_pépites"><i class="fa-solid fa-fire"></i>Nos pépites</button></li>
+                    <li><button id="economique"><i class="fa-solid fa-money-bill-wave"></i> Économique</button></li>
+                    <li><button id="Familial"><i class="fa-solid fa-person"></i> Familial</button></li>
+                    <li><button id="Romantique"><i class="fa-solid fa-heart"></i> Romantique</button></li>
+                    <li><button id="Nos_pépites"><i class="fa-solid fa-fire"></i> Nos pépites</button></li>
                 </ul>
             </div>
             <div class="info-container">
-                <i class="fa-xs fa-solid fa-info-circle" aria-hidden="true" alt="info" id="info"></i>
+                <img src="./images/filtre/info.png" alt="info" id="info">
                 <p id="info-text">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
-        </header>
-        <main>
+            </section>
+
+
             <div class="hebergements-and-populaires">
                 <section class="hebergements" id="hebergements">
                     <div class="hebergements-title">
@@ -231,7 +235,7 @@
                 </section>
             </div>
             <div class="activities" id="activites">
-                <section>
+                <section class="activites">
                     <h2 class="activites-title">Activités à Marseille</h2>
                     <div class="activites-cards">
                         <a href="#">
@@ -273,7 +277,7 @@
         <footer>
             <div class="footer-content">
                 <div class="footer-section-about">
-                    <h3 class="footer-title">A propos</h3>
+                    <h3 class="footer-title">À propos</h3>
                     <button class="footer-text">Fonctionnement du site</button>
                     <button class="footer-text">Conditions générales</button>
                     <button class="footer-text">Données et confidentialité</button>
@@ -281,7 +285,7 @@
                 <div class="footer-content-hebergement">
                     <h3 class="footer-title">Nos hébergements</h3>
                     <button class="footer-text">Charte qualité</button>
-                    <button class="footer-text">Proposez votre hôtel</button>
+                    <button class="footer-text">Proposer votre hôtel</button>
                 </div>
                 <div class="footer-content-assistance">
                     <h3 class="footer-title">Assistance</h3>
